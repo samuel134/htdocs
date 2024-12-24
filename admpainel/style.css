@@ -1,0 +1,187 @@
+    :root {
+      --purple: #8f5fe8;
+      --purple-light: #aa83ea;
+      --white: #ffffff;
+      --dark: #2a2a2a;
+      --gray: #6c7293;
+      --light-gray: #f2f2f2;
+    }
+
+    body {
+      background: var(--light-gray);
+      color: var(--dark);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .container-scroller {
+      display: flex;
+      position: relative;
+    }
+
+    .horizontal-menu {
+      background: var(--white);
+      padding: 0 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .navbar {
+      padding: 1rem 0;
+    }
+
+    .navbar-brand img {
+      height: 40px;
+    }
+
+    .nav-item {
+      margin: 0 0.5rem;
+    }
+
+    .nav-link {
+      color: var(--gray);
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--purple);
+    }
+
+    .nav-link i {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+    }
+
+    .card {
+      border: none;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+    }
+
+    .card-title {
+      color: var(--gray);
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+
+    .bg-gradient-primary {
+      background: linear-gradient(45deg, var(--purple), var(--purple-light));
+    }
+
+    .bg-gradient-success {
+      background: linear-gradient(45deg, #2dd4bf, #34d399);
+    }
+
+    .bg-gradient-info {
+      background: linear-gradient(45deg, #38bdf8, #60a5fa);
+    }
+
+    .text-white {
+      color: var(--white) !important;
+    }
+
+    .progress {
+      height: 8px;
+      border-radius: 4px;
+    }
+
+    .table td {
+      padding: 1rem;
+      vertical-align: middle;
+      border-color: #f3f3f3;
+    }
+
+    .table td img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+    }
+
+    .badge {
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+    }
+
+    .badge-gradient-success {
+      background: linear-gradient(45deg, #2dd4bf, #34d399);
+      color: white;
+    }
+
+    .badge-gradient-warning {
+      background: linear-gradient(45deg, #fbbf24, #f59e0b);
+      color: white;
+    }
+
+    .badge-gradient-danger {
+      background: linear-gradient(45deg, #ef4444, #dc2626);
+      color: white;
+    }
+
+    .todo-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .todo-list li {
+      padding: 0.75rem;
+      border-bottom: 1px solid #f3f3f3;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .form-check-label {
+      margin-left: 1rem;
+    }
+
+    .footer {
+      background: var(--white);
+      padding: 2rem 0;
+      margin-top: 2rem;
+    }
+
+    .menu-title {
+      margin-left: 0.5rem;
+    }
+
+    .card-stats {
+      padding: 1.5rem;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-stats::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.1);
+      transform: skewX(-20deg);
+    }
+
+    .chart-container {
+      position: relative;
+      height: 300px;
+    }
+
+    .dropdown-menu {
+      border: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 0.5rem;
+    }
+
+    .dropdown-item {
+      padding: 0.75rem 1.5rem;
+      color: var(--gray);
+    }
+
+    .dropdown-item:hover {
+      background: var(--light-gray);
+      color: var(--purple);
+    }
